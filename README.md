@@ -157,6 +157,7 @@ graph TD
 #### 1. `name: Node.js CI`
 
 この行は、ワークフローの名前を定義します。この名前は GitHub Actions のダッシュボードで表示されます。ここでは「Node.js CI」という名前が付けられています。
+![image](./images/CI/workflow_name.png)
 
 #### 2. `on:`
 
@@ -178,6 +179,8 @@ graph TD
 - **`strategy: matrix`**: マトリックス戦略を使用して、複数の Node.js バージョンでテストを並列実行します。以下の設定により、`node-version`として`14.x`と`16.x`の 2 つのバージョンが指定されています。
 
   - `node-version: [14.x, 16.x]`: これにより、Node.js のバージョン 14.x と 16.x でテストが並行して実行されます。これを使うことで、複数のバージョンでの互換性を確認できます。
+
+  ![image](./images/CI/matrix.png)
 
 ##### `steps:`
 
