@@ -4,9 +4,9 @@ theme: gaia
 paginate: true
 ---
 
-# 新人エンジニアの CI/CD 入門 ～ CI 編～
+# 新人エンジニアの CI/CD 入門 ～ CD 編～
 
-2025 年 3 月 27 日（木）  
+2025 年 4 月 09 日（水）  
 講義時間：約 20 分（デモ含む）
 
 ---
@@ -120,17 +120,12 @@ graph TD
 
 ### GitHub Actions による自動デプロイ
 
-1. GitHub にて、リポジトリ作成
-1. ローカルにて、諸々準備
-1. cicd の設定ファイル
-   - .github/workflows/xxx.yml
-1. テスト対象のファイ
-   - app.js
-1. テストファイル
-   - tests.app.test.js
-1. ローカルから、 GitHub へコミット・プッシュ
-1. GitHub の Actions タブで、CICD が作動していることを確認
-1. GitHub の Actions タブで、CICD が成功したことを確認
+※CI 編の「GitHub Actions による自動テスト」を完了している前提
+
+1. fire base の秘密鍵を用意
+1. CI 編で用意したリポジトリにて、fire base のプロジェクトの秘密鍵を登録。json 全体をコピペ。
+   ![image](./images/CD/prepare_secret_key.png)
+1. hoge
 
 （デモ中、不明点あれば遠慮なく質問を！）
 
